@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:layout_margin="10sp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/txtbtn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Text"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_text_snippet_24"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:iconGravity="textTop"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:strokeColor="#80FFD89B"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/webbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Website"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_add_link_24"
+            app:iconGravity="textTop"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:strokeColor="#80FFD89B"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/conbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Contact"
+
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_contacts_24"
+            app:iconGravity="textTop"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:strokeColor="#80FFD89B"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/locbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Location"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_location_on_24"
+            app:iconGravity="textTop"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:strokeColor="#80FFD89B"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/phnbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Phone"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_phone_24"
+            app:iconGravity="textTop"
+            android:textStyle="bold"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:strokeColor="#80FFD89B"
+
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mailbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5sp"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            app:cornerRadius="40sp"
+            app:icon="@drawable/ic_baseline_email_24"
+            app:iconGravity="textTop"
+            app:iconSize="40dp"
+            app:strokeWidth="8dp"
+            app:iconTint="#ffd89b"
+            android:textColor="#ffd89b"
+            app:strokeColor="#80FFD89B"
+
+
+            />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="371dp"
+        android:layout_height="39dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="16dp"
+        android:text="QR Code types"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

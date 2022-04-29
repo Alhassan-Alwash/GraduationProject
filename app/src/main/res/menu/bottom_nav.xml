@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="100dp">
+<item
+    android:id="@+id/nav_gen"
+    android:icon="@drawable/ic_baseline_qr_code_24"
+    android:title="Generate"
+    />
+    <item
+    android:id="@+id/nav_arscan"
+    android:icon="@drawable/ic_baseline_drafts_24"
+    android:title="AR Scan"
+        />
+    <item
+    android:id="@+id/nav_scan"
+    android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+    android:title="Scan"
+    />
+</menu>

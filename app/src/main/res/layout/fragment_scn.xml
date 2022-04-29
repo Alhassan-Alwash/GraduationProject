@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_bg_scn">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnscan"
+        app:cornerRadius="15dp"
+        android:layout_width="213dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="452dp"
+        android:layout_marginBottom="199dp"
+        android:text="Scan Code"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/qr" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="366dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="24dp"
+        android:letterSpacing="0.1"
+        android:text="Scan Your QR Code"
+        android:textColor="#F2DFE3EC"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+
+        />
+
+
+</RelativeLayout>
