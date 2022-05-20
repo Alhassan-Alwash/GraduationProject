@@ -1,10 +1,15 @@
 package com.example.qrgenerator;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.MediaScannerConnection;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -41,7 +46,6 @@ public class QrView extends AppCompatActivity {
     Button back;
     Button save;
     ImageView output;
-
     OutputStream outputStream;
 
     @Override
@@ -51,6 +55,8 @@ public class QrView extends AppCompatActivity {
 
         back = findViewById(R.id.back);
         save = findViewById(R.id.save);
+        ActivityCompat.requestPermissions(QrView.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+        ActivityCompat.requestPermissions(QrView.this,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
 
         output = findViewById(R.id.output);
 
@@ -77,34 +83,46 @@ public class QrView extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BitmapDrawable drawable = (BitmapDrawable) output.getDrawable();
-                Bitmap bitmap = drawable.getBitmap();
-
-                File filepath = Environment.getExternalStorageDirectory();
-                File dir = new File(filepath.getAbsolutePath()+"QrCode");
-                dir.mkdir();
-                File file = new File(dir,System.currentTimeMillis()+".jpg");
-                try {
-                    outputStream= new FileOutputStream(file);
-
-                }catch (FileNotFoundException e)
-                {e.printStackTrace(); }
-        bitmap.compress(Bitmap.CompressFormat.JPEG,100,outputStream);
-                Toast.makeText(getApplicationContext(),"Qr Code Saved ",Toast.LENGTH_SHORT).show();
-
-                try {
-                    outputStream.flush();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-                    outputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                saveToGallary();
             }
         });
+    }
+
+    private void saveToGallary() {
+
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) output.getDrawable();
+        Bitmap bitmap = bitmapDrawable.getBitmap();
+
+        FileOutputStream outputStream =null;
+
+        File file = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
+        File dir = new File(file.getAbsolutePath()+"/QrCode");
+
+        boolean b = dir.mkdir();
+        Log.v("dir", ""+b);
+        String filename = String.format("%d.png",System.currentTimeMillis());
+        File outfile = new File(dir,filename);
+        try {
+            outputStream= new FileOutputStream(outfile);
+
+        }catch (FileNotFoundException e)
+        {e.printStackTrace(); }
+        bitmap.compress(Bitmap.CompressFormat.PNG,100,outputStream);
+        MediaScannerConnection.scanFile(this, new String[] { outfile.getPath() }, new String[] { "image/png" }, null);
+        Toast.makeText(getApplicationContext(),"Qr Code Saved ",Toast.LENGTH_SHORT).show();
+
+        try {
+            outputStream.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
+
 }

@@ -63,13 +63,13 @@ public class ContAct extends AppCompatActivity {
                 }else {
                 String text =
                                 "Name :" + name.getText().toString().trim() +
-                                "\nPhoneNumber :" + phone.getText().toString().trim() +
-                                "\nCompanyName :" + company.getText().toString().trim() +
-                                "\nJobTitle :" + title.getText().toString().trim() +
-                                "\nAddress" + location.getText().toString().trim() +
+                                "\nPhone Number :" + phone.getText().toString().trim() +
+                                "\nCompany Name :" + company.getText().toString().trim() +
+                                "\nJob Title :" + title.getText().toString().trim() +
+                                "\nAddress :" + location.getText().toString().trim() +
                                 "\nE-mail :" + email.getText().toString().trim() +
-                                "\nWebSite :" + website.getText().toString().trim() +
-                                "\nnotes" + notes.getText().toString().trim() ;
+                                "\nWeb Site :" + website.getText().toString().trim() +
+                                "\nNotes :" + notes.getText().toString().trim() ;
 
                 Intent intent = new Intent(ContAct.this , QrView.class);
                 intent.putExtra("data",text);
