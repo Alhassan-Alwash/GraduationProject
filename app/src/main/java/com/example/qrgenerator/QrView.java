@@ -86,6 +86,13 @@ public class QrView extends AppCompatActivity {
                 saveToGallary();
             }
         });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     private void saveToGallary() {

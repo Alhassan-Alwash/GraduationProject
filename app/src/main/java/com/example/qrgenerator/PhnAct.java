@@ -39,11 +39,11 @@ public class PhnAct extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(TextUtils.isEmpty(phone.getText().toString().trim())){
-                    Toast.makeText(PhnAct.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PhnAct.this,"Please fill the field",Toast.LENGTH_SHORT).show();
 
                 }else{
 
-                String data = phone.getText().toString().trim();
+                String data = "Phone: "+phone.getText().toString().trim();
                 Intent intent =new Intent(PhnAct.this,QrView.class);
                 intent.putExtra("data",data);
                 startActivity(intent);

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LocAct"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="5">
 
     <TextView
         android:id="@+id/textView"
@@ -19,6 +20,7 @@
         android:text="The Location"
         android:textSize="25dp"
         android:textStyle="bold"
+
         android:drawableEnd="@drawable/ic_baseline_location_on_24"
         android:drawablePadding="15dp"
 
@@ -78,10 +80,10 @@
         android:id="@+id/generate"
         android:layout_width="200dp"
         android:layout_height="60dp"
-        android:layout_gravity="left"
         android:layout_margin="3dp"
         android:elevation="100dp"
         android:letterSpacing="0.1"
+        android:layout_gravity="center"
         android:soundEffectsEnabled="true"
         android:text="Generate Code"
         android:textAllCaps="false"
@@ -89,20 +91,15 @@
         android:textStyle="bold"
         app:cornerRadius="20dp" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/marker"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_gravity="right"
-        android:layout_margin="3dp"
-        android:elevation="100dp"
-        android:letterSpacing="0.1"
-        android:soundEffectsEnabled="true"
-        android:text="Set Location"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:cornerRadius="20dp" />
-
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        android:layout_margin="30dp"
+        />
 
 </LinearLayout>

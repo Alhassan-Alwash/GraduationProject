@@ -29,11 +29,11 @@ public class MailAct extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(TextUtils.isEmpty(input.getText().toString().trim())) {
-                    Toast.makeText(MailAct.this,"Please fill the fields",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MailAct.this,"Please fill the field",Toast.LENGTH_SHORT).show();
 
                 }else {
 
-                String data = input.getText().toString().trim();
+                String data = "E-mail: "+input.getText().toString().trim();
                 Intent intent = new Intent(MailAct.this,QrView.class);
                 intent.putExtra("data",data);
                 startActivity(intent);

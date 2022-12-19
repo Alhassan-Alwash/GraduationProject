@@ -17,11 +17,12 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.1125" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_cont.xml" value="0.25" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_loc.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_loc.xml" value="0.22" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_mail.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_phn.xml" value="0.18854166666666666" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_qr_view.xml" value="0.21" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_qr_view.xml" value="0.33" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_site_view.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_txt.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/activity_txt2.xml" value="0.1" />
@@ -31,7 +32,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_ARscn.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_arscn.xml" value="0.22" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_first.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_gen.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_gen.xml" value="0.22" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/layout/fragment_scn.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/menu/bottom_nav.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/QRGenerator4/app/src/main/res/menu/menu.xml" value="0.15" />

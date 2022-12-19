@@ -44,7 +44,7 @@ public class txtAct extends AppCompatActivity {
                     Toast.makeText(txtAct.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
                 }else{
 
-                    String data = input.getText().toString().trim();
+                    String data = "Notes: "+input.getText().toString().trim();
                     Intent intent = new Intent(txtAct.this, QrView.class);
                     intent.putExtra("data", data);
                     startActivity(intent);

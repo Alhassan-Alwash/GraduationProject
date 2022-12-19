@@ -29,10 +29,10 @@ public class WebAct extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(TextUtils.isEmpty(input.getText().toString().trim())){
-                    Toast.makeText(WebAct.this,"Please fill all the fields",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(WebAct.this,"Please fill the field",Toast.LENGTH_SHORT).show();
                 }else{
 
-                String data = input.getText().toString().trim();
+                String data = "Link: "+input.getText().toString().trim();
                 Intent intent = new Intent(WebAct.this,QrView.class);
                 intent.putExtra("data",data);
                 startActivity(intent);
